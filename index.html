@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel Superheroes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-image">
+        <div class="slider-img">
+          <img src="images/avengers_01.jpg" alt="1" />
+          <h1>Thor</h1>
+          <div class="details">
+            <h2>Thor Odinson</h2>
+            <p>Superhuman strength (so powerful he can lift the Midgard Serpent).Control over thunder and lightning.
+              Wields the enchanted hammer Mjölnir, which returns to him when thrown and can summon storms.Immense stamina and durability.Rides a chariot pulled by two magical goats: Tanngrisnir and Tanngnjóstr</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="images/avengers_02.jpg" alt="2" />
+          <h1>iron man</h1>
+          <div class="details">
+            <h2>tony stark</h2>
+            <p>Technological Powers (via Iron Man Suit):
+Superhuman Strength (varies by suit model)
+
+Flight (via jet boots)
+
+Durability (bulletproof, explosion-resistant)
+
+Advanced Weaponry: repulsor beams, missiles, lasers, energy blades, etc.
+
+AI Assistance: onboard AIs like J.A.R.V.I.S. and F.R.I.D.A.Y.
+
+Life Support: includes oxygen, temperature control, and medical monitoring
+
+Remote Control & Suit Swapping (in later suits)
+
+Nanotechnology (in later versions like the Mark L)
+
+</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="images/avengers_03.jpg" alt="3" />
+          <h1>hulk</h1>
+          <div class="details">
+            <h2>Dr. Robert Bruce Banner</h2>
+            <p> His core ability is unlimited strength that increases the angrier he gets, making him one of the strongest beings in the Marvel Universe. He is nearly invulnerable, with skin that resists bullets, explosions, and extreme conditions.
+              The Hulk also possesses an accelerated healing factor, can leap vast distances, and adapt to survive in harsh environments like deep space or underwater. 
+              In his most powerful forms, he can emit gamma radiation and cause massive destruction with thunderclaps and shockwaves.</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="images/avengers_04.jpg" alt="4" />
+          <h1>hawkeye</h1>
+          <div class="details">
+            <h2>Clint Barton</h2>
+            <p>a master archer and elite marksman in the Marvel Universe. Though he has no superpowers, he is known for his incredible accuracy, often hitting impossible targets with a wide range of specialized trick arrows, including explosives, electrified tips, and grappling hooks. Raised in a circus and later trained by S.H.I.E.L.D., Hawkeye possesses peak human agility,</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="images/avengers_05.jpg" alt="5" />
+          <h1>captain america</h1>
+          <div class="details">
+            <h2>steve rogers</h2>
+            <p>super-soldier and iconic leader of the Avengers in the Marvel Universe. Originally a frail young man during World War II, he was transformed into the peak of human potential through the Super Soldier Serum. This gave him enhanced strength, speed, agility, endurance, reflexes, and a healing factor—though not to the level of superhuman beings like Hulk or Thor. He is a master martial artist, expert tactician, and wields an indestructible vibranium shield that he uses for both defense and offense with incredible precision. Known for his unwavering moral compass, leadership, and bravery, 
+              Captain America embodies the ideal of a hero—fighting not just with strength, but with heart and conviction.r</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="images/avengers_06.jpg" alt="6" />
+          <h1>black widow</h1>
+          <div class="details">
+            <h2>Natasha Romanoff</h2>
+            <p>a highly skilled spy, assassin, and combat expert in the Marvel Universe. Originally trained in the secretive Russian "Red Room" program, she was conditioned to be a lethal operative from a young age. While she doesn't possess superhuman powers, she operates at peak human levels of strength, agility, reflexes, and endurance. Natasha is a master of martial arts, weapons, and stealth, and is fluent in multiple languages. She’s also an expert hacker and strategist, making her a key asset in intelligence missions. Her combat gear often includes electric "Widow's Bite" wrist gauntlets. Despite her dark past, 
+              Black Widow fights for redemption and justice, and her courage and intelligence make her a vital member of the Avengers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").not(this).removeClass("active");
+          $(this).toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
